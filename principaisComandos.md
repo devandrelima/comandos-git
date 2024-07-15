@@ -12,14 +12,14 @@
 
 ## Comandos Básicos:
 
-#### - Inicializa o git na pasta desejada:
+#### + Inicializa o git na pasta desejada:
 ```
 git init
 
 ```
 ##
 
-#### - Configura o git para sempre iniciar o repositório com o branch main como padrão: 
+#### + Configura o git para sempre iniciar o repositório com o branch main como padrão: 
 ```
 git config --global init.defaultBranch main 
 
@@ -27,7 +27,7 @@ git config --global init.defaultBranch main
 #### Mais comandos para configurar o git: [Variações do git config]() 
 ##
 
-#### - Prepara todos os arquivos para criar um commit: 
+#### + Prepara todos os arquivos para criar um commit: 
 ```
 git add . 
 
@@ -39,21 +39,29 @@ git add *
 ```
 ##
 
-#### - Cria um commit: 
+#### + Cria um commit: 
 ```
 git commit -m "'nomeCommit'" 
 
 ```
 ##
 
-#### - Diz se o seu código precisa ser adicionado, commitado ou se está limpo: 
+#### + Diz se o seu código precisa ser adicionado, commitado ou se está limpo: 
 ```
 git status 
 
 ```
 ##
 
-####  - Conecta o seu repositório normal com o gitHub(repositório remoto):
+####  + Diz se estou conectado com algum repositorio remoto, e com qual estou ligado:
+
+```
+git remote -v
+
+```
+##
+
+####  + Conecta o seu repositório normal com o gitHub(repositório remoto):
 
 ```
 git remote add origin 'linkRepositorioGithub'
@@ -61,54 +69,81 @@ git remote add origin 'linkRepositorioGithub'
 ```
 ##
 
-#### - Envia o commit do repositório local para o repositório remoto: 
+#### + Envia o commit do repositório local para o repositório remoto: 
 ```
 git push origin main
 
 ```
 ##
 
-#### - Trás o commit do repositório remoto para o repositório local: 
+#### + Trás o commit do repositório remoto para o repositório local: 
 ```
 git pull origin main
 
 ```
 ##
 
-#### - Mostra histórico de commits do repositório local: 
+#### + Se o git pull comum não funcionar, esse indicado abaixo provavelmente resolverá seu problema: 
+```
+git pull origin main --allow-unrelated-histories
+
+```
+##### Após inserir o comando, segure em ‘Ctrl w q’ para o git funcionar normalmente.
+##
+
+#### + Mostra histórico de commits do repositório local: 
 ```
 git log
 
 ```
 ##
-#### - Os arquivos do commit resetado voltam ao estágio antes do git add e o commit atual torna-se o indicado pelo código: 
+#### + Os arquivos do commit resetado voltam ao estágio antes do git add e o commit atual torna-se o indicado pelo código: 
 ```
 git reset 'codigoCommit' 
 
 ```
 #### Mais comandos para resetar o commit: [Variações do git reset]() 
 ##
-#### - Cria um novo commit baseado no que você indica com o código, retirando todas as mudanças que há no commit mais atual: 
+#### + Cria um novo commit baseado no que você indica com o código, retirando todas as mudanças que há no commit mais atual: 
 ```
 git revert 'codigoCommit'
 
 ```
 ##
-#### - Criar uma nova branch: 
+#### + Criar uma nova branch: 
 ```
 git checkout -b 'nomeNovaBranch'
 
 ```
 ##
-#### - Alterna da branch atual para a indicada: 
+#### + Alterna da branch atual para a indicada: 
 ```
 git checkout 'nomeBranch'
 
 ```
 ##
-#### - Mescla a branch escolhida com a que o programador está atualmente: 
+#### + Mostra as branchs que existem e a que estamos inseridos: 
+```
+git branch
+
+```
+#### Mais comandos relacionados as brachs: [Variações do git branch]() 
+##
+#### + Mescla a branch escolhida com a que o programador está atualmente: 
 ```
 git merge 'nomeBranch'
+
+```
+##
+#### + Baixa as alterações do repositório remoto, mas sem mesclar com a branch local: 
+```
+git fetch origin main
+
+```
+##
+#### + Mostra as diferenças entre o commit remoto e o commit local: 
+```
+git diff 'nomeCommit'
 
 ```
 ##
