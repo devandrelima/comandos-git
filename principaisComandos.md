@@ -102,7 +102,7 @@ git log
 git reset 'codigoCommit' 
 
 ```
-#### Mais comandos para resetar o commit: [Variações do git reset]() 
+#### Mais comandos para resetar o commit: [Variações do git reset](https://github.com/devandrelima/comandos-git/blob/main/varGitReset.md) 
 ##
 #### + Cria um novo commit baseado no que você indica com o código, retirando todas as mudanças que há no commit mais atual: 
 ```
