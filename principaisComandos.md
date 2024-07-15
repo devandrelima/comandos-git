@@ -41,7 +41,7 @@ git add *
 
 #### + Cria um commit: 
 ```
-git commit -m "'nomeCommit'" 
+git commit -m " 'nomeCommit' " 
 
 ```
 ##
@@ -127,7 +127,7 @@ git checkout 'nomeBranch'
 git branch
 
 ```
-#### Mais comandos relacionados as brachs: [Variações do git branch]() 
+#### Mais comandos relacionados as brachs: [Variações do git branch](https://github.com/devandrelima/comandos-git/blob/main/varGitBranch.md) 
 ##
 #### + Mescla a branch escolhida com a que o programador está atualmente: 
 ```
