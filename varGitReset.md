@@ -1,4 +1,4 @@
-# Variações do Girt Reset
+# Variações do Git Reset
 
 ## Observações:
 
