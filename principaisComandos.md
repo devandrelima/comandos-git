@@ -24,7 +24,7 @@ git init
 git config --global init.defaultBranch main 
 
 ```
-#### Mais comandos para configurar o git: [Variações do git config]() 
+#### Mais comandos para configurar o git: [Variações do git config](https://github.com/devandrelima/comandos-git/blob/main/varGitConfig.md) 
 ##
 
 #### + Prepara todos os arquivos para criar um commit: 
